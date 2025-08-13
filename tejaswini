@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud App 1 - Sender</title>
+</head>
+<body>
+  <h1>Cloud App 1</h1>
+  <input type="text" id="messageInput" placeholder="Type a message">
+  <button onclick="sendMessage()">Send Message</button>
+
+  <script>
+    function sendMessage() {
+      let msg = document.getElementById("messageInput").value;
+      localStorage.setItem("cloudMessage", msg);
+      alert("Message sent to Cloud Messaging Service!");
+    }
+  </script>
+</body>
+</html>
